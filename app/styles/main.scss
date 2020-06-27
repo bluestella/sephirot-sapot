@@ -1,87 +1,254 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;900&display=swap');
+@import url('//code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css');
 
-/* Space out content a bit */
 body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #333;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-/* Custom page header */
-.header {
-  padding-bottom: 1rem;
-  border-bottom: .05rem solid #e5e5e5;
-}
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 3rem;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 1.5rem;
-  color: #777;
-  border-top: .05rem solid #e5e5e5;
-}
-
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
-  }
-}
-.container-narrow > hr {
-  margin: 2rem 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 3rem 0;
-}
-.marketing p + h4 {
-  margin-top: 1.5rem;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
+.main-page {
+  margin: 20px 50px;
+  padding: 0;
+  //font-family: 'Montserrat', sans-serif;
   .header {
-    margin-bottom: 2rem;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+    color: #a5a5a5;
+    background-color: #333;
+
+
+    .header-text-block {
+      padding: 70px;
+
+      .sub-title {
+        font-weight: 300;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .header-name {
+        .link-out {
+          text-decoration: none;
+          outline: none;
+
+          .full-name {
+            color: aliceblue;
+            font-size: 48px;
+            letter-spacing: 0px;
+            line-height: 1.2em;
+            font-style: normal;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .social-media {
+
+        a {
+          border: 0;
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          line-height: 48px;
+          font-size: 32px;
+          text-align: center
+        }
+
+        a:hover i {
+          color: #007bff;
+          transition: transform 100ms ease;
+          transform: scale(1)
+        }
+
+        i {
+
+          color: #aaa;
+          transition: transform 250ms ease, color 250ms linear;
+          transform: scale(.7)
+        }
+      }
+
+      .career-summary {
+        width: 800px;
+        line-height: 1.85em;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .btn-download-cv {
+
+        .btn-download-now {
+          padding: .8em 2em;
+          font-weight: 300;
+          font-size: 1em;
+          color: aliceblue;
+          border-radius: 0;
+          border: 2px solid #0099e5;
+        }
+
+      }
+    }
+
+    .image-bubble {
+      img {
+        height: auto;
+        max-height: 300px;
+        width: auto;
+        max-width: 300px;
+      }
+    }
   }
 }
+
+
+/*
+.page-layout {
+  width:100%;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  //font-family: 'Noto Sans', sans-serif;
+  .header {
+
+    background: rgba(34, 34, 34, 1);
+    position: fixed;
+    float: left;
+    width: 300px;
+    overflow-y: scroll;
+    transition: 0.5s;
+    z-index: 10;
+    height: 450px;
+
+    .header-image {
+      position: relative;
+      margin: 20px auto;
+      text-align: center;
+      z-index: 0;
+
+      img {
+        height: auto;
+        max-height: 80px;
+        width: auto;
+        max-width: 80px;
+      }
+    }
+
+
+    .title-name {
+      position: relative;
+      z-index: 1;
+      margin: 20px 20px 10px;
+      text-align: center;
+
+      .link-out {
+        text-decoration: none;
+        outline: none;
+      }
+
+      h1 {
+        color: aliceblue;
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        line-height: 1.2em;
+        font-style: normal;
+        font-weight: 600;
+      }
+    }
+
+    //end of title-name
+
+    .social-media {
+      text-align: center;
+
+      a {
+        border: 0;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 32px;
+        text-align: center
+      }
+
+      a:hover i {
+        color: #007bff;
+        transition: transform 100ms ease;
+        transform: scale(1)
+      }
+
+      i {
+
+        color: #aaa;
+        transition: transform 250ms ease, color 250ms linear;
+        transform: scale(.7)
+      }
+    }
+
+    //end of social-media
+
+  }
+
+  //end of header
+
+
+  .main-page {
+    float: right;
+    width: calc(100% - 300px);
+
+    .page-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      padding: 0;
+      z-index: 1;
+      background-color: transparent;
+
+      .child-pages {
+        .pt-page {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          padding-left: 20px;
+          margin: 0 auto;
+          top: 0;
+          left: 0;
+          right: 0;
+
+        }
+
+        .section-inner {
+          height: auto;
+          width: 100%;
+          position: relative;
+
+          .banner {
+            padding-left: 0;
+            height: 100%;
+            min-height: 100%;
+
+            .fill-block {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              min-height: 300px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-image: url('https://lmpixels.com/wp/kerge-wp/dark/wp-content/uploads/sites/7/2018/04/cesar-rincon.jpg');
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+
+}
+*/
+
+//https://lmpixels.com/wp/kerge-wp/dark/#about-me
