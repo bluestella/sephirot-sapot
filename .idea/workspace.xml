@@ -89,7 +89,7 @@
       <updated>1520266625346</updated>
       <workItem from="1520266630924" duration="848000" />
       <workItem from="1520331959955" duration="727000" />
-      <workItem from="1593267703780" duration="12741000" />
+      <workItem from="1593267703780" duration="22426000" />
     </task>
     <servers />
   </component>
@@ -97,9 +97,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1593269896621">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1593334393018">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-84.1920.1080@0.0.1440.900" timestamp="1593269896621" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.-84.1920.1080@0.0.1440.900" timestamp="1593334393018" />
   </component>
 </project>
